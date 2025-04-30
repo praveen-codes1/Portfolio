@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import  './App.css';
+import Header from './components/header.jsx';
+import Counter from './components/counter.jsx';
+import ToggleMessage from './components/toggle.jsx';
+import Event from './components/event.jsx'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header name='Praveen' job='Developer'/>
+      <Event/>
+      <Counter/>
+      <ToggleMessage/>
     </div>
   );
 }
