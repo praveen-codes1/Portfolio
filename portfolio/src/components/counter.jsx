@@ -8,13 +8,13 @@ function Counter(){
         <div>
             <h2>Count: {count}</h2>
             <button onClick={() =>setCount(count+1)}>
-                INCREASE
+                UP
             </button>
             <button onClick={() =>setCount(count-1)}>
-                DECREASE
+                DOWN
             </button>
             <button onClick={() =>setCount(0)}>
-                RESET
+                AGAIN
             </button>
         </div>
     );
