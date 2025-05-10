@@ -1,27 +1,30 @@
-import './App.css';
-import Header from './components/header.jsx';
-import Counter from './components/counter.jsx';
-import ToggleMessage from './components/toggle.jsx';
-import Event from './components/event.jsx';
-import ContactForm from './components/contactForm.jsx';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NavBar from './components/navbar.jsx';
+import NavBar from './components/navBar';
+import Footer from './components/footer';
+import Home from './pages/home';
+import About from './pages/about';
+import Projects from './pages/projects';
+import Achievements from './pages/achievements';
+import Contact from './pages/contacts';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
+    <Router>
+      <div className="app-container">
         <NavBar />
-        
-        <Routes>
-          <Route path="/About" element={<Event />} />
-          <Route path="/TogCoun" element={<Counter />} />
-          <Route path="/Header" element={<Header name='Praveen' job='Developer'/>}/>
-          <Route path="/ConForm" element={<ContactForm />}/>
-        </Routes>
-        
-      </Router>
-    </div>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/achievements" element={<Achievements />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

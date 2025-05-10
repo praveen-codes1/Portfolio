@@ -1,19 +1,21 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-function NavBar(){
-    return(
-        <nav>
-            <Link to="/">Home</Link>
-            <br/>
-            <Link to="/About">About</Link>
-            <br/>
-            <Link to="/TogCoun">Toggle and Counter</Link>
-            <br/>
-            <Link to="/Header">Header</Link>
-            <br/>
-            <Link to="/ConForm">Contact</Link>
-        </nav>
-    );
+function NavBar() {
+  return (
+    <nav className="navbar">
+      <div className="navbar-left">
+        <span className="navbar-name">Praveen Patil</span>
+      </div>
+      <div className="navbar-right">
+        <NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''}>About</NavLink>
+        <NavLink to="/projects" className={({ isActive }) => isActive ? 'active' : ''}>Projects</NavLink>
+        <NavLink to="/achievements" className={({ isActive }) => isActive ? 'active' : ''}>Achievements</NavLink>
+        <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>Contact</NavLink>
+      </div>
+    </nav>
+  );
 }
 
 export default NavBar;
+
