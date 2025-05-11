@@ -63,7 +63,6 @@ main {
     text-align: center;
   }
   
-  /* Two-column layout for intro */
   .intro-content {
     display: flex;
     gap:2rem;
@@ -79,7 +78,7 @@ main {
     font-size: 1.1rem;
     line-height: 1.6;
     text-align: justify;
-    white-space: pre-line; /* preserves line breaks */
+    white-space: pre-line; 
   }
   
   .intro-image {
@@ -95,7 +94,7 @@ main {
     border-radius: 8px;
   }
   
-  /* --- Collaboration / Contact Section --- */
+  /* --- Collaboration  Section --- */
   .collaboration {
     max-width: 1200px;
     margin: 0 auto;
@@ -118,11 +117,10 @@ main {
     font-style: normal;
     font-size: 7rem;
     line-height: 1;
-    margin-left: -0.8rem; /* overlap */
+    margin-left: -0.8rem; 
     user-select: none;
   }
   
-  /* Two-column layout for collaboration */
   .collab-content {
     display: flex;
     gap: 3rem;
@@ -208,5 +206,16 @@ main {
     .collaborate {
       font-size: 2.5rem;
     }
+  }
+  
+  .linked {
+    text-decoration: none;
+    color: inherit; 
+    display: inline-block; 
+  }
+  
+  .linked:hover {
+    text-decoration: none; 
+    color: #ffffff; 
   }
   

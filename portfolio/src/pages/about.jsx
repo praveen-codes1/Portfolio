@@ -48,12 +48,13 @@ const About = () => (
   <div className="about-bg">
     {/* HEADER: You can import your Header component here if not already global */}
     {/* <Header /> */}
-
+    <div id="sprk">
     {/* Main Title */}
     <div className="about-title">ABOUT</div>
-
+    </div>
+    <div id="restab">
     {/* Education */}
-    <div className="about-section-label">EDUCATION</div>
+    <div className="about-section-label" id="ed">EDUCATION</div>
     <div className="about-education-list">
       {education.map((item, idx) => (
         <div className="about-edu-card" key={idx}>
@@ -66,9 +67,9 @@ const About = () => (
         </div>
       ))}
     </div>
-
     {/* Certifications */}
-    <div className="about-section-label">CERTIFICATIONS</div>
+    
+    <div className="about-section-label" id="cer">Certifications</div>
     <div className="about-cert-list">
       {certifications.map((cert, idx) => (
         <div className="about-cert-card" key={idx}>{cert}</div>
@@ -92,6 +93,7 @@ const About = () => (
         <li key={idx}>{point}</li>
       ))}
     </ul>
+  </div>
   </div>
 );
 

@@ -1,23 +1,39 @@
 /* Gradient background: black to white */
 .about-bg {
     min-height: 100vh;
-    width: 100vw;
+    width: 1050m;
     padding: 0;
     margin: 0;
     font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
-    background: linear-gradient(to bottom, #000 0%, #f7f7f7 100%);
+    background: black;
+    /*background-image: linear-gradient(to bottom, #000000, #2e2e2e, #585858, #878787, #b9b9b9, #cac9d0, #dadae7, #e9ecff, #d2e0ff, #b6d5ff, #91ccfe, #5fc3fb);*/
+    /*background-image: url("C:/Users/PRAVEEN PATIL/Desktop/PROJECTS/Portfolio/portfolio/src/assets/str3.jpeg");*/
   }
-  
+  #sprk{
+    margin-top: 10px;
+    padding-bottom: 20px;
+    background-image: url("C:/Users/PRAVEEN PATIL/Desktop/PROJECTS/Portfolio/portfolio/src/assets/car1.jpeg");
+  }
+   #restab{
+    background-image: linear-gradient(to bottom, #000000, #2e2e2e, #585858, #878787, #b9b9b9, #cac9d0, #dadae7, #e9ecff, #d2e0ff, #b8c2d2, #5f6469, #000000);
+    margin-top: 0;
+   }
   /* Main Title */
   .about-title {
     text-align: center;
-    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-family: 'Josephin Sans', sans-serif;
     font-size: 4rem;
     letter-spacing: 0.18em;
     color: #fff;
     margin-top: 60px;
     margin-bottom: 36px;
     font-weight: 400;
+    font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+  font-size: 5rem;
+  letter-spacing: .5em;
   }
   
   /* Section Labels */
@@ -25,11 +41,15 @@
     text-align: center;
     font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
     font-size: 1.2rem;
-    color: #fff;
+    color: #000000;
     letter-spacing: 0.08em;
     margin-top: 32px;
     margin-bottom: 18px;
     font-weight: bold;
+  }
+  #ed{
+    color: white;
+    text-align: center;
   }
   
   /* Education Cards */
@@ -69,15 +89,24 @@
   .about-cert-list {
     display: flex;
     justify-content: center;
-    margin-top: 15px;
     margin-bottom: 20px;
+}
+    #cer{
+    font-family: "Ballet", cursive;
+    font-weight: 10;
+    font-style: normal;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    z-index: 2;
+    user-select: none;
+    letter-spacing: 0;
   }
   
   .about-cert-card {
-    background: linear-gradient(90deg, #e2eeda 0%, #b6d8a8 100%);
+    background: linear-gradient(180deg, #e2eeda 0%, #36a10b 70%);
     border-radius: 32px;
     padding: 16px 32px;
-    color: #222;
+    color: #000000;
     font-size: 1.06rem;
     font-family: 'Fira Mono', monospace;
     margin: 0 10px;
@@ -95,12 +124,12 @@
     gap: 28px 32px;
     margin: 18px 0 32px 0;
   }
-  
+
   .about-participation-card {
-    background: linear-gradient(90deg, #e2eeda 0%, #b6d8a8 100%);
+    background: linear-gradient(180deg, #9da398 0%, #000000 70%);
     border-radius: 32px;
     padding: 16px 36px;
-    color: #222;
+    color: #ffffff;
     font-size: 1.06rem;
     font-family: 'Fira Mono', monospace;
     min-width: 250px;
@@ -108,29 +137,34 @@
     font-weight: 500;
     box-shadow: 0 1px 6px rgba(0,0,0,0.07);
   }
-  
   /* Beyond Code Section */
   .about-beyond-title {
-    font-family: 'Fira Mono', monospace;
+    justify-content: center;
+    font-family: "Fira Code", monospace;
     font-size: 1.3rem;
     font-weight: bold;
+    letter-spacing: 10em;
     text-transform: uppercase;
     margin: 40px 0 18px 0;
     color: #222;
-    letter-spacing: 0.04em;
-    text-align: left;
+    letter-spacing: .4em;
+    text-align: center;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
   }
   
   .about-beyond-list {
-    font-family: 'Fira Mono', monospace;
+    font-family: 'Fira Code', monospace;
     font-size: 1.05rem;
-    color: #222;
+    background: -webkit-linear-gradient(#000000 37%, #ffffff 50%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     max-width: 900px;
     margin: 0 auto 42px auto;
+    margin-bottom: 50px;
     padding-left: 18px;
+    padding-bottom: 10px;
   }
   
   .about-beyond-list li {
