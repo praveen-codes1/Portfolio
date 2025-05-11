@@ -4,7 +4,7 @@
   
 .nav-bar {
     background-color: rgba(0, 0, 0, 0.5); 
-    background-image: url("C:/Users/PRAVEEN PATIL/Desktop/PROJECTS/Portfolio/portfolio/src/assets/jupy3.jpeg");
+    background-image: url('../assets/jupy3.jpeg');
 
     border: 1px solid white;
     border-radius: 12px;

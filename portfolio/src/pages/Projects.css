@@ -9,7 +9,7 @@
   }
   
  #prj{
-    background-image: url("C:/Users/PRAVEEN PATIL/Desktop/PROJECTS/Portfolio/portfolio/src/assets/prj.jpeg");
+    background-image: url('../assets/prj.jpeg');
  }
 
   .projects-title {

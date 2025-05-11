@@ -12,7 +12,7 @@
   #sprk{
     margin-top: 10px;
     padding-bottom: 20px;
-    background-image: url("C:/Users/PRAVEEN PATIL/Desktop/PROJECTS/Portfolio/portfolio/src/assets/car1.jpeg");
+    background-image: url('../assets/car1.jpeg');
   }
    #restab{
     background-image: linear-gradient(to bottom, #000000, #2e2e2e, #585858, #878787, #b9b9b9, #cac9d0, #dadae7, #e9ecff, #d2e0ff, #b8c2d2, #5f6469, #000000);
