@@ -33,8 +33,8 @@ const certifications = [
 const participation = [
   'DataQuest, UVCE',
   'Quantum Hacks, NHCE',
-  'DataQuest, UVCE',
-  'Quantum Hacks, NHCE',
+  'Technotsav, CIT',
+  'Code-A-Thon',
 ];
 
 const leadership = [

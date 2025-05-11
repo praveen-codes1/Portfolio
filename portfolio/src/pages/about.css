@@ -71,8 +71,23 @@
     flex-direction: column;
     gap: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    transition: transform 0.15s, box-shadow 0.15s;
+    cursor: pointer;
   }
   
+  .about-edu-card:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    background: linear-gradient(180deg, #cccccc 0%, #ffffff 100%);
+  }
+  
+  /*.about-edu-card {
+    background: linear-gradient(180deg, #ffffff 0%, #888888 100%);
+    opacity: 0.45;
+    cursor: default;
+    pointer-events: none;
+  }*/
+
   .about-edu-year {
     font-weight: bold;
     font-size: 1.12rem;
@@ -103,7 +118,7 @@
   }
   
   .about-cert-card {
-    background: linear-gradient(180deg, #e2eeda 0%, #36a10b 70%);
+    background: linear-gradient(180deg, #e2eeda 0%, #cbff50 70%);
     border-radius: 32px;
     padding: 16px 32px;
     color: #000000;
@@ -114,8 +129,15 @@
     text-align: center;
     font-weight: 500;
     box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+    transition: transform 0.15s, box-shadow 0.15s;
+    cursor: pointer;
   }
   
+  .about-cert-card:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    background: linear-gradient(180deg, #cccccc 0%, #0096e2 100%);
+  }
   /* External Participation */
   .about-participation-list {
     display: flex;
@@ -136,6 +158,14 @@
     text-align: center;
     font-weight: 500;
     box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+    transition: transform 0.15s, box-shadow 0.15s;
+    cursor: pointer;
+  }
+  
+  .about-participation-card:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    background: linear-gradient(180deg, #cccccc 0%, #0096e2 100%);
   }
   /* Beyond Code Section */
   .about-beyond-title {

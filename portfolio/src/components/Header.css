@@ -30,35 +30,42 @@
     border-radius: 8px;
     cursor: default;
     margin: 0;
-  }
+}
   
   /* Right side navigation links container */
   .nav-right {
     display: flex;
     list-style: none;
-    gap: 32px;                        /* Even spacing between links */
+    gap: 32px;                        
     padding: 6px 14px;
-    border: 1px solid transparent;          /* Border around the links */
+    border: 1px solid transparent;          
     border-radius: 8px;
     margin: 0;
+    transition: transform 0.15s, box-shadow 0.15s;
+    cursor: pointer;
   }
+  
+  
   
   /* Individual nav links */
   .nav-right li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-  font-size: 1.05rem;
-  letter-spacing: 1.5px;
+    font-size: 1.05rem;
+    letter-spacing: 1.5px;
     font-weight: 600;
     font-size: 1rem;
     font-family: "Fira Code", monospace;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
     letter-spacing: 2px;
     transition: color 0.3s ease;
+    cursor: pointer;
   }
   
-  /* Hover effect for nav links */
   .nav-right li a:hover {
-    color: #53911f; /* Example accent color (greenish) */
+        transform: translateY(-3px) scale(1.03);
+        background: -webkit-linear-gradient(#3dff46 , #ffffff ); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
   }
   
