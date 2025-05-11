@@ -1,0 +1,147 @@
+/* Gradient background: black to white */
+.about-bg {
+    min-height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
+    background: linear-gradient(to bottom, #000 0%, #f7f7f7 100%);
+  }
+  
+  /* Main Title */
+  .about-title {
+    text-align: center;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 0.18em;
+    color: #fff;
+    margin-top: 60px;
+    margin-bottom: 36px;
+    font-weight: 400;
+  }
+  
+  /* Section Labels */
+  .about-section-label {
+    text-align: center;
+    font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
+    font-size: 1.2rem;
+    color: #fff;
+    letter-spacing: 0.08em;
+    margin-top: 32px;
+    margin-bottom: 18px;
+    font-weight: bold;
+  }
+  
+  /* Education Cards */
+  .about-education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .about-edu-card {
+    background: #eaeaea;
+    border-radius: 24px;
+    padding: 22px 28px;
+    font-size: 1.05rem;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  }
+  
+  .about-edu-year {
+    font-weight: bold;
+    font-size: 1.12rem;
+    margin-bottom: 2px;
+    letter-spacing: 0.09em;
+  }
+  
+  .about-edu-details {
+    font-size: 1rem;
+    color: #222;
+  }
+  
+  /* Certifications */
+  .about-cert-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .about-cert-card {
+    background: linear-gradient(90deg, #e2eeda 0%, #b6d8a8 100%);
+    border-radius: 32px;
+    padding: 16px 32px;
+    color: #222;
+    font-size: 1.06rem;
+    font-family: 'Fira Mono', monospace;
+    margin: 0 10px;
+    min-width: 320px;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+  }
+  
+  /* External Participation */
+  .about-participation-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px 32px;
+    margin: 18px 0 32px 0;
+  }
+  
+  .about-participation-card {
+    background: linear-gradient(90deg, #e2eeda 0%, #b6d8a8 100%);
+    border-radius: 32px;
+    padding: 16px 36px;
+    color: #222;
+    font-size: 1.06rem;
+    font-family: 'Fira Mono', monospace;
+    min-width: 250px;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+  }
+  
+  /* Beyond Code Section */
+  .about-beyond-title {
+    font-family: 'Fira Mono', monospace;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 40px 0 18px 0;
+    color: #222;
+    letter-spacing: 0.04em;
+    text-align: left;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about-beyond-list {
+    font-family: 'Fira Mono', monospace;
+    font-size: 1.05rem;
+    color: #222;
+    max-width: 900px;
+    margin: 0 auto 42px auto;
+    padding-left: 18px;
+  }
+  
+  .about-beyond-list li {
+    margin-bottom: 12px;
+    line-height: 1.7;
+  }
+  
+  /* Responsive */
+  @media (max-width: 700px) {
+    .about-title { font-size: 2.5rem; }
+    .about-education-list, .about-beyond-title, .about-beyond-list { max-width: 98vw; }
+    .about-cert-card, .about-participation-card { min-width: 160px; padding: 12px 10px; font-size: 0.98rem; }
+  }
+  

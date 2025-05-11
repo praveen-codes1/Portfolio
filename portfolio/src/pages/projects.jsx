@@ -1,38 +1,21 @@
-import React, { useState } from 'react';
-
-const allProjects = [
-  { id: 1, title: "Project One", description: "Description of Project One" },
-  { id: 2, title: "Project Two", description: "Description of Project Two" },
-  { id: 3, title: "Project Three", description: "Description of Project Three" },
-  { id: 4, title: "Project Four", description: "Description of Project Four" },
-  { id: 5, title: "Project Five", description: "Description of Project Five" },
-  { id: 6, title: "Project Six", description: "Description of Project Six" },
-];
-
-function Projects() {
-  const [filter, setFilter] = useState('all');
-
-  const filteredProjects = filter === 'all' ? allProjects : allProjects.filter(p => p.id === Number(filter));
-
-  return (
-    <section className="projects">
-      <h1>Select Works</h1>
-      <div className="filters">
-        {[1,2,3,4,5,6].map(num => (
-          <button key={num} onClick={() => setFilter(num.toString())} className={filter === num.toString() ? 'active' : ''}>{num}</button>
-        ))}
-        <button onClick={() => setFilter('all')} className={filter === 'all' ? 'active' : ''}>All Projects</button>
+export default function Projects() {
+    const projects = [
+      { title: "Project One", desc: "Description of the first project." },
+      { title: "Project Two", desc: "Description of the second project." },
+      { title: "Project Three", desc: "Description of the third project." },
+    ];
+  
+    return (
+      <div className="p-6 font-fira">
+        <h2 className="text-3xl font-blosta mb-6">Projects</h2>
+        <div className="grid gap-6 md:grid-cols-2">
+          {projects.map((p, i) => (
+            <div key={i} className="border p-4 rounded shadow-md">
+              <h3 className="text-xl font-semibold">{p.title}</h3>
+              <p>{p.desc}</p>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="project-list">
-        {filteredProjects.map(project => (
-          <div key={project.id} className="project-item">
-            <h2>{project.title}</h2>
-            <p>{project.description}</p>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
-
-export default Projects;
+    );
+  }

@@ -1,168 +1,36 @@
-.cal-sans-regular {
-  font-family: "Cal Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.jacquard-12-charted-regular {
-  font-family: "Jacquard 12 Charted", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
-
-.nabla-3dfont  {
-  font-family: "Nabla", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "EDPT" 150,
-    "EHLT" 17;
-}
 body {
+  font-family: 'Fira Code', monospace;
+  background-color: black;
+}
+
+.font-kabel {
+  font-family: 'Kabel', sans-serif;
+}
+
+.font-blosta {
+  font-family: 'Blosta Script', cursive;
+}
+
+.font-fira {
+  font-family: 'Fira Code', monospace;
+}
+
+/*scent BACKGROUND*/
+html, body, #root {
   margin: 0;
-  font-family: "Cal Sans", system-ui;
-  background: #000000;
-  color: #222;
+  padding: 0;
+  height: 100%;
+}
+.header-main-title-bg{
+   position: relative;
+   padding-top: 10px;
 }
 
-
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 30px;
-  border: 2px solid #000000; 
-  border-radius: 14px 14px 14px 14px; 
-  width: 100%;          /* full width */
-  max-width: 97vw;     /* max viewport width */
-  box-sizing: border-box;
-  margin: 7px 7px 0px 7px;
-  background: white;
-  box-shadow: 0 4px 10px rgba(255, 62, 0, 0.1);
-}
-
-.navbar-left .navbar-name {
-  font-weight: 400;
-  font-size: 2rem;
-  color: #000000;
-  letter-spacing: 0.05em;
-}
-
-.navbar-right a {
-  margin-left: 25px;
-  text-decoration: none;
-  font-weight: 300;
-  font-size: 1rem;
-  color: #222;
-  transition: color 0.3s ease;
-  position: relative;
-}
-
-.navbar-right a:hover,
-.navbar-right a.active {
-  color: #000000;
-}
-
-.navbar-right a::after {
-  content: '';
-  display: block;
-  width: 0%;
-  height: 2px;
-  background: #000000;
-  transition: width 0.3s ease;
-  position: absolute;
-  bottom: -6px;
-  left: 0;
-}
-
-.navbar-right a:hover::after,
-.navbar-right a.active::after {
-  width: 100%;
-}
-
-
-main {
-  flex: 1;
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-footer.footer {
-  background: #f5f5f5;
-  padding: 20px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-.home h1 {
-  font-size: 7rem;
-  margin-top: 0;
-  margin-bottom: 0rem;
-  font-family: "Nabla", system-ui;
-}
-
-.home h2 {
-  font-size: 7rem;
-  font-weight: 400;
-  margin-bottom: 0rem;
-  color: #555;
-}
-
-.home p {
-  font-size: 3rem;
-  line-height: 1;
-  font-style: italic;
-  margin-top: 0rem;
-  max-width: 600px;
-}
-
-.about h1, .projects h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.projects .filters {
-  margin-bottom: 20px;
-}
-
-.projects .filters button {
-  margin-right: 10px;
-  padding: 8px 15px;
-  font-weight: 600;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.3s ease;
-}
-
-.projects .filters button.active,
-.projects .filters button:hover {
-  border-color: #000000;
-}
-
-.project-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
-
-.project-item {
-  border: 1px solid #ddd;
-  padding: 20px;
-  transition: box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.project-item:hover {
-  box-shadow: 0 8px 20px rgba(255, 62, 0, 0.2);
+.main-title, .introduction, .collaboration {
+  background-color: transparent; /* or rgba(0,0,0,0.3) for subtle overlay */
+  max-width: 1200px;
+  margin: 0 auto 3rem auto;
+  padding: 0 1rem;
 }

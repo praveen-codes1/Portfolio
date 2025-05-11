@@ -1,13 +1,19 @@
-import myphoto from './suit_pic1.jpg';
+import React from 'react';
+import './Header.css'; // Assuming styles are in App.css
 
+const Header = () => {
+  return (
+    <nav className="nav-bar">
+      <div className="nav-left">
+        PRAVEEN PATIL
+      </div>
+      <ul className="nav-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+      </ul>
+    </nav>
+  );
+};
 
-function Header(props){
-    return(
-        <header>
-            <h1>Welcome to {props.name}'s portfolio!</h1>
-            <h2>An aspiring {props.job}.</h2>
-            <img src={myphoto} alt="Profile Pic" height={200}/>
-        </header>
-    );
-}
 export default Header;
