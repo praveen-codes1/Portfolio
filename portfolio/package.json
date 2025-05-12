@@ -7,11 +7,15 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "framer-motion": "^11.18.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.5.3",
     "react-scripts": "^5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@react-three/fiber": "^8.15.19",
+    "@react-three/drei": "^9.99.7",
+    "three": "^0.162.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -46,8 +50,6 @@
     "@babel/plugin-transform-private-property-in-object": "^7.27.1"
   },
   "overrides": {
-  "nth-check": "^2.0.1"
-}
-
-
+    "nth-check": "^2.0.1"
+  }
 }

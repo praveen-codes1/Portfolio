@@ -2,38 +2,44 @@
 main {
     font-family: "Fira Code";
     color: rgb(0, 0, 0);
-    background-color: transparent; /* dark background */
+    background-color: transparent;
     padding: 0rem;
-  }
-  
-  .main-title {
+}
+
+/* Modern styling for home page */
+.main-title {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.title-3d-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0rem;
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin-bottom: 0rem;
-    user-select: none;
-  }
-  
-  .tech {
+    gap: 1rem;
+}
+
+.tech {
     font-family: "Source Code Pro", monospace;
-  font-optical-sizing: auto;
-  font-weight: 350;
-  font-style: normal;
-  font-size: 5rem;
-    /*font-size: 100px;*/
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    font-size: 6rem;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
     z-index: 2;
     letter-spacing: 0.7em;
-  }
-  
-  .enthusiast {
+    margin: 0;
+    display: flex;
+}
+
+.enthusiast {
     font-family: "Ballet", cursive;
     font-weight: 10;
     font-style: normal;
@@ -41,76 +47,127 @@ main {
     color: white;
     z-index: 2;
     user-select: none;
-  }
-  
-  /* --- Introduction Section --- */
-  .introduction {
-    max-width: 1200px;
-    margin: 0 auto 5rem auto;
-  }
-  .hiiam{
+    margin: 0;
+    padding-left: 1rem;
+}
+
+/* --- Introduction Section --- */
+.introduction {
+    padding: 6rem 2rem 0 2rem;
+}
+
+.hiiam {
     font-family: 'Josephin Sans', sans-serif;
-    font-size: 2.5rem;
+    font-size: 17rem;
     font-weight: 300;
     letter-spacing: 0.3em;
-  }
-
-  .section-title {
-    font-family: sans-serif;
-    letter-spacing: 0.3em;
-    font-size: 1.8rem;
     margin-bottom: 2rem;
-    text-align: center;
-  }
-  
-  .intro-content {
-    display: flex;
-    gap:2rem;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .intro-text {
-    flex: 1 1 400px;
-    color: #ffffff;
+    position: relative;
+    color: white;
+}
+
+.intro-text p {
     font-family: "Fira Code";
     font-size: 1.1rem;
-    line-height: 1.6;
-    text-align: justify;
-    white-space: pre-line; 
-  }
-  
-  .intro-image {
-    flex: 1 1 300px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .intro-image img {
-    max-width: 100%;
+    line-height: 1.8;
+    color: white;
+}
+#hi{
+  font-size: 3rem;
+}
+.intro-image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.intro-image img {
+    width: 100%;
     height: auto;
+    display: block;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
     filter: grayscale(100%);
-    border-radius: 8px;
-  }
-  
-  /* --- Collaboration  Section --- */
-  .collaboration {
+}
+
+.intro-content {
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  
-  
-  .lets {
-    font-family: 'Josephin Sans',sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.intro-text {
+    padding-right: 2rem;
+}
+
+/* --- Collaboration Section --- */
+.collaboration {
+    padding: 0 2rem;
+    position: relative;
+    overflow: hidden;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+}
+
+.vinyl-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: inset(0 0 50% 0); /* Clip the bottom half */
+}
+
+.vinyl-disc {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.vinyl-disc svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.4));
+}
+
+.contact-content {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    transform: translateY(-45%); /* Move content up */
+}
+
+.collaborate-title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.lets {
+    font-family: 'Josephin Sans', sans-serif;
     font-weight: 200;
     font-size: 2rem;
     color: white;
     letter-spacing: 0.3em;
-  }
-  
-  .collaborate {
+    margin-right: 1rem;
+}
+
+.collaborate {
     font-family: "Ballet", cursive;
     font-weight: 10;
     color: white;
@@ -118,35 +175,25 @@ main {
     font-size: 7rem;
     line-height: 1;
     letter-spacing: 0;
-    margin-left: -0.8rem; 
+    margin-left: -0.8rem;
     user-select: none;
-  }
-  
-  .collab-content {
+}
+
+.contact-buttons {
     display: flex;
-    gap: 3rem;
-    align-items: center;
-    color: white;
+    gap: 2rem;
     justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .contact-info {
-    flex: 1 1 400px;
-    font-family: monospace;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: rgb(255, 255, 255);
-  }
-  
-  .contact-info strong {
-    display: block;
-    margin-bottom: 0.3rem;
-    letter-spacing: 0.2em;
-  }
-  
-  .contact-button {
-    margin-top: 1.5rem;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+}
+
+.contact-item {
+    text-decoration: none;
+}
+
+.contact-button {
+    margin: 0;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     border: none;
@@ -154,69 +201,104 @@ main {
     font-family: monospace;
     font-weight: 700;
     cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.contact-button:hover {
+    background-color: #8ebc44;
+}
+
+.linked {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    border-radius: 6px;
-    transition: background-color 0.3s ease;
-  }
-  .linked {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5em;
+    justify-content: center;
     background-color: #457df8;
     color: rgb(255, 255, 255);
     border: none;
-    padding: 0.75rem 1.5rem;
-    font-family: arial;
-    font-size: 2em;
-    font-weight: 700;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    padding: 0.75rem;
+    width: 45px;
+    height: 45px;
     border-radius: 6px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .contact-button:hover {
-    background-color: #8ebc44;
-  }
-  .linked:hover {
+    transition: all 0.3s ease;
+}
+
+.linked:hover {
     background-color: #70c557;
-  }
-  
-  
-  
-  .collab-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 900px) {
-    .intro-content,
-    .collab-content {
-      flex-direction: column;
+}
+
+.linkedin-icon {
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+/* Remove ferrari-container styles */
+.ferrari-container,
+.ferrari-container canvas {
+    display: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .vinyl-container {
+        max-width: 800px;
+        height: 800px;
     }
-  
-    .tech, .enthusiast {
-      font-size: 3.5rem;
+}
+
+@media screen and (max-width: 992px) {
+    .vinyl-container {
+        max-width: 700px;
+        height: 700px;
     }
-  
+}
+
+@media screen and (max-width: 768px) {
+    .vinyl-container {
+        max-width: 600px;
+        height: 600px;
+    }
+    
+    .lets {
+        font-size: 1.5rem;
+    }
+    
     .collaborate {
-      font-size: 2.5rem;
+        font-size: 5rem;
     }
-  }
+}
+
+@media screen and (max-width: 480px) {
+    .vinyl-container {
+        max-width: 400px;
+        height: 400px;
+    }
+    
+    .lets {
+        font-size: 1.2rem;
+    }
+    
+    .collaborate {
+        font-size: 4rem;
+    }
+    
+    .contact-buttons {
+        gap: 0.8rem;
+    }
+    
+    .contact-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Support for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .vinyl-disc {
+        animation: none;
+    }
+}
   
-  .linked {
-    text-decoration: none;
-    color: inherit; 
-    display: inline-block; 
-  }
-  
-  .linked:hover {
-    text-decoration: none; 
-    color: #ffffff; 
-  }
   

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+    <!-- Outer ring -->
+    <circle cx="250" cy="250" r="245" fill="#0a0a0a" />
+    <circle cx="250" cy="250" r="240" fill="#1a1a1a" />
+    
+    <!-- Record grooves -->
+    <g fill="none" stroke="#2a2a2a" stroke-width="1">
+        <circle cx="250" cy="250" r="230" />
+        <circle cx="250" cy="250" r="220" />
+        <circle cx="250" cy="250" r="210" />
+        <circle cx="250" cy="250" r="200" />
+        <circle cx="250" cy="250" r="190" />
+        <circle cx="250" cy="250" r="180" />
+        <circle cx="250" cy="250" r="170" />
+        <circle cx="250" cy="250" r="160" />
+        <circle cx="250" cy="250" r="150" />
+        <circle cx="250" cy="250" r="140" />
+        <circle cx="250" cy="250" r="130" />
+        <circle cx="250" cy="250" r="120" />
+        <circle cx="250" cy="250" r="110" />
+        <circle cx="250" cy="250" r="100" />
+        <circle cx="250" cy="250" r="90" />
+        <circle cx="250" cy="250" r="80" />
+    </g>
+    
+    <!-- Center label -->
+    <circle cx="250" cy="250" r="70" fill="#2c2c2c" />
+    <circle cx="250" cy="250" r="20" fill="#0a0a0a" />
+    
+    <!-- Shine effect -->
+    <path d="M100,250 A150,150 0 0,1 400,250" 
+          stroke="rgba(255,255,255,0.15)" 
+          stroke-width="40" 
+          fill="none" />
+</svg> 
