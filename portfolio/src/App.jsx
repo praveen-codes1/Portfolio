@@ -19,15 +19,9 @@ function App() {
                 {/* Background wrapper only for Home main title */}
                 <div
                   className="header-main-title-bg"
-                  style={{
-                    backgroundImage: `url(${require('./assets/homebg.png')})`,
-                    backgroundRepeat: 'no-repeat',
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center top',
-                    color: 'white',
-                    margin: 0,
-                  }}
+                  id="tech-bg"
                 >
+                  <div className="background-image-tech"></div>
                   <Home.MainTitle />
                 </div>
                 <Home.RestOfHome />

@@ -22,7 +22,10 @@ const projects = [
 
 const Projects = () => (
   <div className="projects-bg">
-    <div className="projects-title" id="prj">PROJECTS</div>
+    <div id="prj">
+      <div className="background-image-projects"></div>
+      <div className="projects-title">PROJECTS</div>
+    </div>
     <div className="projects-list">
       {projects.map((proj, idx) => (
         <a

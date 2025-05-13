@@ -200,6 +200,18 @@ export const RestOfHome = () => (
           </div>
         </div>
       </div>
+      <motion.div 
+        className="spark-image-container"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 1.8 }}
+      >
+        <img 
+          src={require('../assets/sprk.jpeg')} 
+          alt="Spark" 
+          className="spark-image"
+        />
+      </motion.div>
     </motion.section>
   </>
 );

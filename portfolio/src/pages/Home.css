@@ -41,10 +41,10 @@ main {
 
 .enthusiast {
     font-family: "Ballet", cursive;
-    font-weight: 10;
+    font-weight: 14;
     font-style: normal;
     font-size: 7rem;
-    color: white;
+    color: rgb(0, 0, 0);
     z-index: 2;
     user-select: none;
     margin: 0;
@@ -111,6 +111,7 @@ main {
     overflow: hidden;
     min-height: 600px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #000000;
@@ -184,8 +185,8 @@ main {
     gap: 2rem;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0;
-    padding-bottom: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 .contact-item {
@@ -232,6 +233,28 @@ main {
     width: 24px;
     height: 24px;
     color: white;
+}
+
+.spark-image-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: -400px; /* Adjusted from -500px to -400px to create some space */
+    overflow: hidden;
+}
+
+.spark-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.8;
+    transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+.spark-image:hover {
+    transform: scale(1.1);
+    opacity: 1;
 }
 
 /* Remove ferrari-container styles */
