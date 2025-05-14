@@ -45,9 +45,11 @@ const participation = [
 
 const leadership = [
   'Youngest Sports Captain and House Vice-Captain in school at age 13 and 14.',
-  'Core Board Member, Drama Club – leading a team of 100+ members, organizing performances and competitions.',
-  'Head Organizer, MovieCon – managed logistics, coordination, and event execution with large student participation.',
+  'Club Member, Innovation Club – leading a team of 100+ members, organizing performances and competitions.',
+  'Board Member and Coordinator, Drama Club – leading a team of 100+ members, organizing performances and competitions.',
+  'Organizing Team, MovieCon – managed logistics, coordination, and event execution with large student participation.',
   'I thrive in roles that demand initiative, vision, and the ability to energize teams toward a shared goal.',
+  'I am a quick learner and a team player, I am always looking for new challenges and opportunities to grow.',
 ];
 
 const About = () => {
