@@ -63,7 +63,7 @@
   }
   
   .project-pill {
-    background: linear-gradient(180deg, #00ffd5 0%, #818181 100%);
+    background: linear-gradient(180deg, #f7f7f7 0%, #818181 100%);
     border-radius: 40px;
     min-width: 360px;
     min-height: 56px;
@@ -82,7 +82,7 @@
   .project-pill:hover {
     transform: translateY(-3px) scale(1.03);
     box-shadow: 0 8px 24px rgba(168, 255, 96, 0.18);
-    background: linear-gradient(180deg, #50ba85 0%, #ffffff 100%);
+    background: linear-gradient(180deg, #a9ffd4 0%, #ffffff 100%);
   }
   
   .project-pill-empty {
