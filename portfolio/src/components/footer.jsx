@@ -1,14 +1,7 @@
-import React from 'react';
-
-function Footer() {
-  return (
-    <footer className="footer">
-      <div>Contact:</div>
-        Email: praveen.patil@example.com<br/>
-        Instagram: @yourhandle<br/>
-        Linkedin: @yourhandle<br/>
-    </footer>
-  );
-}
-
-export default Footer;
+export default function Footer() {
+    return (
+      <footer className="text-center text-sm text-gray-500 py-4 font-fira">
+        © 2025 Praveen. All rights reserved.
+      </footer>
+    );
+  }

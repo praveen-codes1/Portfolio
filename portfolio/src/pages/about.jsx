@@ -7,7 +7,7 @@ const education = [
     details: [
       'BE – Computer Science and Engineering (Data Science)',
       'New Horizon College of Engineering',
-      '9.31 CGPA, Club Member, Innovation Club; Organiser, MovieCon Fest; Core Coordinator; Drama Club',
+      '9.31 CGPA, Club Member- Innovation Club; Organizing coordinator- MovieCon Fest; Coordinator and Board member- Drama Club',
     ],
     link: 'https://newhorizoncollegeofengineering.in/'
   },
