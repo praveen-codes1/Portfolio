@@ -181,7 +181,7 @@
   }
   /* Beyond Code Section */
   .beyond-container {
-    background: linear-gradient(145deg, #ffffff, #E0FFFF, #39ffbd);
+    background: linear-gradient(145deg, #ffffff, #E0FFFF, #aaaaaa);
     border-radius: 25px;
     padding: 80px;
     margin: 80px auto;
