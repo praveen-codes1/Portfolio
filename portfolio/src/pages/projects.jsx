@@ -18,6 +18,10 @@ const projects = [
     name: "Data Cleaning and Analytics",
     link: "https://public.tableau.com/views/Jupiter_Jupyter/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
   },
+  {
+    name: "Tableau Dashboard",
+    link: "https://public.tableau.com/views/Jupiter_Jupyter/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+  },
 ];
 
 const Projects = () => (
