@@ -198,7 +198,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(127, 255, 212, 0.2));
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgb(126, 126, 126));
     z-index: 1;
   }
 
