@@ -31,9 +31,13 @@ const education = [
 
 const certifications = [
   {
+    title: 'IoT Fundamentals',
+    image: require('../assets/nptel.jpg'),
+  },
+  {
     title: 'Front End Developer (React), HackerRank',
     image: require('../assets/react_certf.png'),
-  }
+  },
 ];
 
 const participation = [

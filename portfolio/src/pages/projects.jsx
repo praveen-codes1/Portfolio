@@ -3,6 +3,14 @@ import "./Projects.css";
 
 const projects = [
   {
+    name: "MLOps Pipeline",
+    link: "https://github.com/praveen-codes1/PMMLO.git",
+  },
+  {
+    name: "RAG using Wikipedia",
+    link: "https://github.com/praveen-codes1/RAG.git",
+  },
+  {
     name: "Carpooling Web",
     link: "https://github.com/praveen-codes1/NammaCarpool",
   },
